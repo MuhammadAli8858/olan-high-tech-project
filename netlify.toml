@@ -1,0 +1,10 @@
+# Настройки сборки и публикации для Netlify
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA: любой путь отдаём index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
